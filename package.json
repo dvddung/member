@@ -1,0 +1,27 @@
+{
+  "name": "member",
+  "version": "0.0.0",
+  "description": "a express middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/turingou/member.git"
+  },
+  "keywords": [
+    "member",
+    "uc",
+    "user",
+    "center",
+    "user-center",
+    "session",
+    "sessions"
+  ],
+  "author": "turing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/turingou/member/issues"
+  }
+}
