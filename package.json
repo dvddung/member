@@ -1,6 +1,6 @@
 {
   "name": "member",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a Express middleware for managing distributed user sessions",
   "main": "index.js",
   "scripts": {

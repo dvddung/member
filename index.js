@@ -1,6 +1,3 @@
-var connectMongo = require('connect-mongo'),
-    defaults = { db: 'member' };
-
 var passport = function(req, res, next, cb) {
     if (req.session.user) {
         res.locals.user = req.session.user;
@@ -11,7 +8,7 @@ var passport = function(req, res, next, cb) {
 }
 
 // middleware: check signin status
-exports.check = function(checking, signin) {
+exports.checker = function(checking, signin) {
     return function(req, res, next) {
         passport(req, res, next, function() {
             if (checking) {
@@ -40,7 +37,6 @@ exports.signout = function(req, res) {
     }
 };
 
-// middleware: session store
-exports.session = function(express, configs) {
-    return new connectMongo(express)(configs && typeof(configs) == 'object' ? configs : defaults);
-};
+// shotcuts
+exports.check = exports.checker(true);
+exports.passport = exports.checker();
