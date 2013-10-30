@@ -1,7 +1,7 @@
 {
   "name": "member",
-  "version": "0.0.0",
-  "description": "a express middleware",
+  "version": "0.0.1",
+  "description": "a Express middleware for managing distributed user sessions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +23,8 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/turingou/member/issues"
+  },
+  "dependencies": {
+    "connect-mongo":"*"
   }
 }

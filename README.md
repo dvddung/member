@@ -1,6 +1,6 @@
 ## member ![npm](https://badge.fury.io/js/member.png)
 
-a express middleware
+a Express middleware for managing distributed user sessions
 
 ### Installation
 ````
